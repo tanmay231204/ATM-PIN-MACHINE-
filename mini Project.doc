@@ -1,0 +1,98 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Text To Word</title></head><body><p>#include&lt;stdio.h&gt;</p>
+<p>int main()</p>
+<p>{</p>
+<p>&nbsp;int ch,pin,crd,amt=50000,acc,otp,mob,C;</p>
+<p>&nbsp;printf("\n PLEASE ENTER YOU CARD");</p>
+<p>&nbsp;scanf("%d",&amp;crd);</p>
+<p>&nbsp;printf("\n PLEASE DO NOT REMOVE YOUR CARD.....\n WHILE YOUR TRANSACTION BEING IN PROGRESS...");</p>
+<p>&nbsp;printf("\n\n\n\nENTER YOUR CHOICE \n 1.CASH WITHDRAW \n 2.CHECK BALANCE \n 3.CASH DEPOSITE \n 4.FOR RECIEPT \n 5.SET PIN");</p>
+<p>&nbsp;scanf("%d",&amp;ch);</p>
+<p>&nbsp;switch(ch)</p>
+<p>&nbsp;{</p>
+<p>&nbsp; case 1: printf("\n ENTER YOUR PIN");</p>
+<p>&nbsp; scanf("%d",&amp;pin);</p>
+<p>&nbsp; if(pin==4444)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; printf("\n ENTER YOUR AMOUNT");</p>
+<p>&nbsp; scanf("%d",&amp;amt);</p>
+<p>&nbsp; if(amt&lt;=50000)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; printf("\n YOUR TRANSACTION IS IN PROGRESS.... \n.\n.\n.\n.\n.\n.\n.\n.\nPLEASE COLLECT YOUR CASH \n THANKYOU FOR VISIT");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; else</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n YOUR BANK BALANCE IS INSUFEFFICIENT...");</p>
+<p>&nbsp; }</p>
+<p>&nbsp;}</p>
+<p>&nbsp; else&nbsp;</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n INVALID PIN");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; break;</p>
+<p>&nbsp; case 2: printf("\n ENTER YOUR PIN");</p>
+<p>&nbsp; scanf("%d",&amp;pin);</p>
+<p>&nbsp; if(pin==4444)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; printf("\n YOUR BALANCE = 50000");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; else</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n INVALID PIN");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; break;</p>
+<p>&nbsp; case 3: printf("\n ENTER YOUR PIN");</p>
+<p>&nbsp; scanf("%d",&amp;pin);</p>
+<p>&nbsp; if(pin==4444)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n ENTER ACCOUNT NUMBER ");</p>
+<p>&nbsp; scanf("%d",&amp;acc);</p>
+<p>&nbsp; printf("\n ENTER IFSC CODE");</p>
+<p>&nbsp; scanf("%d",&amp;C);</p>
+<p>&nbsp; printf("\n ENTER AMOUNT TO DEPOSITE");</p>
+<p>&nbsp; scanf("%d",&amp;amt);</p>
+<p>&nbsp; printf("\n YOUR AMOUNT DEPOSITED TO YOUR ACCOUNT ");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; else</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n INVALID PIN");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; break;</p>
+<p>&nbsp; case 4: printf("\n ENTER YOUR PIN");</p>
+<p>&nbsp; scanf("%d",&amp;pin);</p>
+<p>&nbsp; if(pin==4444)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; printf("\n PLEASE COLLECT YOUR RECIPET... \n THANKYOU FOR VISITING");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; else</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n INVALID PIN");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; break;</p>
+<p>&nbsp; case 5: printf("\n ENTER YOUR MOBILE NO.");</p>
+<p>&nbsp; scanf("%d",&amp;mob);</p>
+<p>&nbsp; printf("\n ENTER OTP YOU RECEIVED");</p>
+<p>&nbsp; scanf("%d",&amp;otp);</p>
+<p>&nbsp; if(otp==1234)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n ENTER YOUR NEW PIN");</p>
+<p>&nbsp; scanf("%d",&amp;pin);</p>
+<p>&nbsp; int npin;</p>
+<p>&nbsp; printf("\n RE-ENTER YOUR NEW PIN");</p>
+<p>&nbsp; scanf("%d",&amp;npin);</p>
+<p>&nbsp; if(pin==npin)</p>
+<p>&nbsp; {</p>
+<p>&nbsp; printf("\n YOUR PIN WAS SUCCESSFULLY CHANGED");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; else</p>
+<p>&nbsp; {</p>
+<p>&nbsp; printf("\n SOMETHING WENT WRONG.. \n PIN DOESN'T MATCH TO YOUR NEW PIN ");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; }</p>
+<p>&nbsp; else&nbsp;</p>
+<p>&nbsp; {</p>
+<p>&nbsp; &nbsp;printf("\n INVALID OTP");</p>
+<p>&nbsp; }</p>
+<p>&nbsp; break;</p>
+<p>&nbsp; default:printf("\n INVALID REQUEST");</p>
+<p>&nbsp;}</p>
+<p>}</p></body></html>
